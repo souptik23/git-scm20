@@ -8,12 +8,7 @@ public class Scm20Application {
 
 	public static void main(String[] args) {
 		SpringApplication.run(Scm20Application.class, args);
-
-		//check command in the main branch for pushing 
-
-		//this is the comment in the sub branch
-
-		// this is the sub branch comment number 2
+		
 	}
 
 }
