@@ -12,6 +12,8 @@ public class Scm20Application {
 		//check command in the main branch for pushing 
 
 		//this is the comment in the sub branch
+
+		// this is the sub branch comment number 2
 	}
 
 }
