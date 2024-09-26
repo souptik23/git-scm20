@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Page</title>
+</head>
+
+<body>
+
+    <h1>this is for about page </h1>
+    <hr />
+
+    <!-- using the host fragment -->
+    <div class="host-tag" th:replace="${isLogin} ? ~{base :: login(~{::#loginPass})} : ~{base :: login(~{::#loginFail})} ">
+        <section id="first_content">
+            <h2>hi my name is souptik karan</h2>
+            <h3>helo world about page</h3>
+            <button>Hello</button>
+        </section>
+
+        <section id="second_content">
+            <h1>Second content</h1>
+        </section>
+
+        <section id="loginPass">
+            <h1>User is loggedin</h1>
+        </section>
+        <section id="loginFail">
+            <h1>User is not loggedin</h1>
+        </section>
+    </div>
+
+
+</body>
+
+</html>

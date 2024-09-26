@@ -1,0 +1,10 @@
+<div class="parent-fragment" th:fragment="parent(content)">
+    <p>Hello this is comming from the base page</p>
+    <hr/>
+    <div th:replace="${content}">sections</div>
+</div> 
+
+<div th:fragment="login(content)">
+    <p>this is the login section yaaay</p>
+    <div th:replace="${content}"></div>
+</div>
