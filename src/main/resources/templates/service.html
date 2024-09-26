@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Service Page</title>
+</head>
+
+<body>
+
+    <h1>this is service Page</h1>
+    <hr />
+
+    <!-- fragment for replace -->
+    <div th:replace="~{base :: parent(~{:: section})}">
+        <section>
+            <h1>Hello , service section</h1>
+        </section>
+    </div>
+</body>
+
+</html>
