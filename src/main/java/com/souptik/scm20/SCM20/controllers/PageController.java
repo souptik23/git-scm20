@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @Controller
 public class PageController {
 
-    @RequestMapping("/hello")//
+    @RequestMapping("/home")//
     public String helloworld(Model model){
 
         model.addAttribute("name", "souptik karan");
@@ -31,5 +31,20 @@ public class PageController {
     public String service(){
 
         return "service";
+    }
+
+    @RequestMapping("/contact")
+    public String contact(){
+        return "contact";
+    }
+
+    @RequestMapping("/login")
+    public String gotoLoginPage(){
+        return "login";
+    }
+
+    @RequestMapping("/signup")
+    public String gotoSignupPage(){
+        return "signup";
     }
 }
